@@ -3,3 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.projects > div > div > div > a > img {
+  width: 250px;
+  height: 170px;
+}

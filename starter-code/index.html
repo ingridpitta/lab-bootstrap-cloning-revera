@@ -18,57 +18,65 @@
   </head>
   <body>
     <header>
-      <nav class="row">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">
         <div class="col-sm-4">
-          <h1><a>REVERA</a></h1>
+          <h1><a class="navbar-brand mb-0 h1">REVERA</a></h1>
         </div>
-        <div class="col-sm-8">
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Sample Page</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blog</a></li>
-            <li>
-              <a>Parent Page <span>»</span></a>
+        <div class="collapse navbar-collapse col-sm-8" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link">Home</a></li>
+            <li class="nav-item"><a class="nav-link">About</a></li>
+            <li class="nav-item"><a class="nav-link">Sample Page</a></li>
+            <li class="nav-item"><a class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link">Parent Page <span class="sr-only">»</span></a>
             </li>
-            <li><a>Contact</a></li>
+            <li class="nav-item"><a class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <section>
-        <div class="flexslider">
-            <ul class="slides">
-                <li><a><img src="./img/slider-1.jpg" alt="slider-1 image"></a>
-                    <div>
+        <div class="carousel slide" data-ride="carousel">
+            <ul class="carousel-inner">
+                <li class="carousel-item active"><a><img class="d-block w-100" src="./img/slider-1.jpg" alt="First slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
                         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, aperiam.</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo aperiam ea dolore ducimus aut voluptatum excepturi aliquid, neque inventore error! Nisi architecto modi eaque quas adipisci nam temporibus ullam ratione!</p>
                         <a>READ MORE</a>
                     </div>
                 </li>
-                <li><a><img src="./img/slider-2.jpg" alt="slider-2 image"/></a>
-                    <div>
+                <li class="carousel-item"><a><img class="d-block w-100" src="./img/slider-2.jpg" alt="Second slide"/></a>
+                    <div class="carousel-caption d-none d-md-block">
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis.</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus omnis quae ab quis reprehenderit doloremque repellendus repudiandae voluptate, earum saepe!</p>
                         <a>READ MORE</a>
                     </div>
                 </li>
-                <li><a><img src="./img/slider-3.jpg" alt="slider-3 image"/></a>
-                    <div>
+                <li class="carousel-item"><a><img class="d-block w-100" src="./img/slider-3.jpg" alt="Third slide"/></a>
+                    <div class="carousel-caption d-none d-md-block">
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis.</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus omnis quae ab quis reprehenderit doloremque repellendus repudiandae voluptate, earum saepe!</p>
                         <a>READ MORE</a>
                     </div>
                 </li>
-                <li><a><img src="./img/slider-4.jpg" alt="slider-4 image"/></a>
-                    <div>
+                <li class="carousel-item"><a><img class="d-block w-100" src="./img/slider-4.jpg" alt="Fourth slide"/></a>
+                    <div class="carousel-caption d-none d-md-block">
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis.</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus omnis quae ab quis reprehenderit doloremque repellendus repudiandae voluptate, earum saepe!</p>
                         <a>READ MORE</a>
                     </div>
                 </li>
             </ul>
+            <a class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
         <div class="fwidgets">
             <div class="container">
@@ -94,81 +102,89 @@
     </section>
     <section>
         <div class="container">
-            <div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>LATESTS PROJECTS</h2>
+                    <p>FEW OF THE LATESTS PORTFOLIO ITEMS</p>
+                </div>
+            </div>
+            <div class="projects">
                 <div class="row">
-                    <div class="col-12">
-                        <h2>LATESTS PROJECTS</h2>
-                        <p>FEW OF THE LATESTS PORTFOLIO ITEMS</p>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/project-1.jpg" alt="project-1 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
                     </div>
-                    <div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/project-1.jpg" alt="project-1 image"/></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/project-2.jpg" alt="project-2 image" /></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/project-3.jpg" alt="project-3 image" /></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/project-4.jpg" alt="project-4 image"/></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                        </div>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/project-2.jpg" alt="project-2 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/project-3.jpg" alt="project-3 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/project-4.jpg" alt="project-4 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>LATESTS ARTICLES</h2>
+                    <p>FLATESTS POST FROM THE BLOG</p>
+                </div>
+            </div>
+            <div class="projects">
                 <div class="row">
-                    <div class="col-12">
-                        <h2>LATESTS ARTICLES</h2>
-                        <p>FLATESTS POST FROM THE BLOG</p>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/slider-1.jpg" alt="article-1 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                        <div>
+                            <span>POSTED ON <a>AUGUST</a></span>
+                            <span>BY <a>ADMIN</a></span>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit
+                            natus in explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi
+                            unde ea voluptate!</p>
                     </div>
-                    <div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/slider-1.jpg" alt="article-1 image"/></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                            <div>
-                                <span>POSTED ON <a>AUGUST</a></span>
-                                <span>BY <a>ADMIN</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit natus in explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea voluptate!</p>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/slider-2.jpg" alt="article-2 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                        <div>
+                            <span>POSTED ON <a>AUGUST</a></span>
+                            <span>BY <a>ADMIN</a></span>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/slider-2.jpg" alt="article-2 image" /></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                            <div>
-                                <span>POSTED ON <a>AUGUST</a></span>
-                                <span>BY <a>ADMIN</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit natus in
-                                explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea voluptate!
-                            </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit
+                            natus in
+                            explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea
+                            voluptate!
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/slider-3.jpg" alt="article-3 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                        <div>
+                            <span>POSTED ON <a>AUGUST</a></span>
+                            <span>BY <a>ADMIN</a></span>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/slider-3.jpg" alt="article-3 image" /></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                            <div>
-                                <span>POSTED ON <a>AUGUST</a></span>
-                                <span>BY <a>ADMIN</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit natus in
-                                explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea voluptate!
-                            </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit
+                            natus in
+                            explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea
+                            voluptate!
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div><a><img src="./img/slider-4.jpg" alt="article-4 image" /></a></div>
+                        <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
+                        <div>
+                            <span>POSTED ON <a>AUGUST</a></span>
+                            <span>BY <a>ADMIN</a></span>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div><a><img src="./img/slider-4.jpg" alt="article-4 image" /></a></div>
-                            <h3><a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam.</a></h3>
-                            <div>
-                                <span>POSTED ON <a>AUGUST</a></span>
-                                <span>BY <a>ADMIN</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit natus in
-                                explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea voluptate!
-                            </p>
-                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cumque omnis itaque, reprehenderit
+                            natus in
+                            explicabo officiis aspernatur soluta debitis quas repellendus dolorum et ullam corporis modi unde ea
+                            voluptate!
+                        </p>
                     </div>
                 </div>
             </div>
